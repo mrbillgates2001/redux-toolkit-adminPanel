@@ -6,12 +6,10 @@ const AuthContext = createContext("Shahboz");
 export const AuthProvider = ({ children }) => {
 	const [userjon, setUserjon] = useState("Shahboz");
 
-	const login = async(user) => {
-        try {
-            axios.put(`https://localhost:3000/`)
-        } catch (error) {
-            
-        }
+	const login = async (user) => {
+		try {
+			axios.put(`https://localhost:3000/login`);
+		} catch (error) {}
 		setUserjon(user);
 	};
 

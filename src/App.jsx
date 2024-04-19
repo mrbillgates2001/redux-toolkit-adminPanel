@@ -13,6 +13,7 @@ import EditTeacher from "./components/EditTeacher";
 import EditStudent from "./components/EditStudent";
 import { AuthProvider } from "./components/Auth";
 import RequiredAuth from "./components/RequiredAuth";
+import SignUp from "./pages/SignUp";
 
 const App = () => {
 	return (
@@ -45,6 +46,7 @@ const App = () => {
 							}
 						/>
 						<Route path="/login" element={<Login />} />
+						<Route path="/signup" element={<SignUp />} />
 						<Route
 							path="/profile"
 							element={
